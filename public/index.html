@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docédex</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="pokedex">
+
+    <div class="lado-esquerdo">
+      <div class="decoracao-topo">
+        <div class="lente-azul"></div>
+        <div class="leds-pequenos">
+          <span class="led-mini vermelho"></span>
+          <span class="led-mini amarelo"></span>
+          <span class="led-mini verde"></span>
+        </div>
+      </div>
+
+      <div class="tela-tipo" id="telaTipo">
+        <span class="tela-tipo-texto" id="telaTipoTexto">?</span>
+      </div>
+
+      <div class="decoracao-base">
+        <div class="dpad"></div>
+        <div class="mini-tela"></div>
+      </div>
+    </div>
+
+    <div class="lado-direito">
+      <header class="pokedex-header">
+        <div class="led"></div>
+        <h1>DOCUMENT DEX</h1>
+      </header>
+
+      <main class="pokedex-screen">
+
+        <div class="area-upload" id="areaUpload">
+          <p class="texto-upload">ARRASTE SEU ARQUIVO AQUI</p>
+          <p class="texto-upload-ou">OU</p>
+          <button class="botao-escolher" id="botaoEscolher">ESCOLHA UM ARQUIVO</button>
+          <input type="file" id="inputArquivo" accept=".pdf,.doc,.docx" hidden>
+        </div>
+
+        <div class="info-arquivo" id="infoArquivo" hidden>
+          <p class="info-linha">Nome: <span id="infoNome"></span></p>
+          <p class="info-linha">Tipo: <span id="infoTipo"></span></p>
+          <p class="info-linha">Tamanho: <span id="infoTamanho"></span></p>
+
+          <div class="area-conversao">
+            <p class="titulo-conversao">ESCOLHA A TRANSFORMAÇÃO</p>
+            <div class="lista-cartoes" id="listaCartoes"></div>
+          </div>
+
+          <button class="botao-escolher botao-outro" id="botaoOutroArquivo">ESCOLHER OUTRO ARQUIVO</button>
+        </div>
+
+        <div class="tela-transferencia" id="telaTransferencia" hidden>
+          <div class="energia">
+            <span class="linha-energia"></span>
+            <span class="linha-energia"></span>
+            <span class="linha-energia"></span>
+            <span class="linha-energia"></span>
+          </div>
+          <p class="texto-transferencia" id="textoTransferencia">PREPARANDO DOCUMENTO...</p>
+          <div class="barra-progresso">
+            <div class="barra-progresso-preenchida" id="barraProgresso"></div>
+          </div>
+        </div>
+
+        <div class="tela-concluido" id="telaConcluido" hidden>
+          <p class="texto-upload">DOCUMENTO CONVERTIDO!</p>
+          <p class="info-linha" id="nomeArquivoConvertido"></p>
+          <button class="botao-escolher" id="botaoBaixar">BAIXAR DOCUMENTO</button>
+          <button class="botao-escolher" id="botaoConverterOutro">CONVERTER OUTRO ARQUIVO</button>
+        </div>
+
+      </main>
+
+      <footer class="pokedex-footer">
+        <button class="botao-fisico"></button>
+        <button class="botao-fisico"></button>
+        <button class="botao-fisico"></button>
+      </footer>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
