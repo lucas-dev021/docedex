@@ -1,6 +1,6 @@
 # DOCeDEX
 
-Conversor gratuito de **PDF para DOCX** com uma interface inspirada em uma Pokédex.
+Conversor gratuito de **PDF para DOCX** com uma interface inspirada em uma Dex.
 
 🌐 **Teste o projeto:** https://docedex.onrender.com
 
@@ -18,7 +18,7 @@ A proposta é simples: enviar um PDF e receber um arquivo DOCX de forma rápida,
 - Conversão de PDF para DOCX
 - Download do arquivo convertido
 - Limite de até 15 MB por arquivo
-- Interface inspirada em uma Pokédex
+- Interface inspirada em uma dex
 
 ## Tecnologias utilizadas
 
